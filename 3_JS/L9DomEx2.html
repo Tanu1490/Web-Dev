@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom project</title>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button class="js-btn" onclick="Subscribe()">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders above $40 = FREE shipping.</p>
+
+    <input
+      placeholder="Cost of order"
+      class="js-input"
+      onkeydown="handleCostKeydown()"
+    />
+
+    <button onclick="cal()">Calculate</button>
+
+    <p class="js-calCost"></p>
+
+    <!-- --------------------------------- -->
+
+    <input class ="textbox" placeholder="Enter text"  onkeyup="
+    document.querySelector('.js-msg').innerHTML = `${document.querySelector('.textbox').value}`
+    ">
+    <p class="js-msg"></p>
+
+    <script>
+      function handleCostKeydown() {
+        if (event.key === "Enter") cal();
+      }
+
+      function cal() {
+        const inputElement = document.querySelector(".js-input");
+        let cost = Number(inputElement.value);
+
+        // Convert the numbers to cents by * 100.
+        // let cost = Number(inputElement.value) * 100;
+
+        if (cost < 40) {
+          cost = Number((cost + 10).toFixed(2));
+        //   if (cost < 4000) {
+        //   cost = cost + 1000;
+        // }
+        // // Convert back to dollars at the end.
+        // document.querySelector('.js-total-cost')
+        //   .innerHTML = `$${cost / 100}`;
+        //
+
+          document.querySelector(".js-calCost").innerHTML = `$${cost}`;
+        } else document.querySelector(".js-calCost").innerHTML = `$${cost}`;
+      }
+      function Subscribe() {
+        let btnElement = document.querySelector(".js-btn");
+        if (btnElement.innerText === "Subscribe")
+          btnElement.innerHTML = "Subscribed";
+        else btnElement.innerHTML = "Subscribe";
+      }
+    </script>
+  </body>
+</html>

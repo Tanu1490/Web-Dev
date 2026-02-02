@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+    //    const product = {
+    //     name: 'socks',
+    //     price:'1089'
+    //    } 
+
+    //    console.log(product);
+    //    console.log(product.name);
+    //    console.log(product.price);
+    //    product.name = 'shirt';
+    //    console.log(product);
+
+    //    product.material = 'cotton';
+    //    console.log(product);
+
+    //    delete product.material;
+    //    console.log(product);
+
+    //    console.log( typeof product);
+
+
+    // const product2 = {
+    //     name:'shirt',
+    //     'delivery-time': '1-day',
+    //     rating:{
+    //         stars: 4.5,
+    //         count: 87
+    //     },
+
+    //     fun: function fun1(){
+    //         console.log('function inside object');
+    //     }
+    // };
+
+    // console.log(product2);
+    // console.log(product2.name);
+    // console.log(product2['name']);
+    // console.log(product2['delivery-time']);
+    // console.log(product2['delivery' + 'time']);
+    // console.log(product2['var1']);
+    // console.log(product2.rating.stars);
+    // product2.fun();
+
+    // console.log(typeof console);
+    // console.log(typeof console.log);
+    
+    // console.log(JSON.stringify(product2));  //doesn't support func.
+
+    // const p = JSON.stringify(product2);
+    // console.log(JSON.parse(p));
+
+
+    console.log('hello'.toUpperCase());
+    console.log('hello'.length);
+
+    // object are reference types in js
+
+    const obj1 = {
+        x:1,
+        y:2
+    };
+
+    console.log(obj1);
+    const obj2 = obj1;
+    console.log(obj2.y);
+
+    obj2.x = 67;       // change is still happening as only value are changing not reference (address)
+    console.log(obj2);
+
+    const obj3 = {
+        x:67,
+        y:2
+    };
+    console.log(obj1 === obj3);  //both pointing to diff mem.
+    console.log(obj1===obj2);    // both pointing to same
+
+
+    //Shortcuts
+    const obj4 = {
+        msg:'Good Job',
+        price:709
+    };
+
+    // destructuring
+    // A shortcut to take values out of objects or arrays and put them into variables.
+
+    // const msg = obj4.msg;    
+
+    // when property and variable in which to save the value is same 
+    const {msg,price} = obj4;
+    console.log(msg);
+    console.log(price);
+
+    const obj5 = {
+        // msg : msg
+        // shorthand property
+        msg,
+
+        //shorthand method
+        // fun: function fn(){
+        //     console.log('this is function');
+        // }
+
+        fun(){
+            console.log('this is function');
+        }
+    };
+
+    console.log(msg);
+    obj5.fun();
+    
+
+
+
+
+    </script>
+</body>
+</html>

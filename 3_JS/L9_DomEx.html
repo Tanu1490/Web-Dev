@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="js-button">9a</button>
+
+    <button class="js-button2">9b</button>
+
+    <button
+      onclick="
+        // showMove('heads');
+        document.querySelector('.paraText').innerHTML = 'You chose: Heads.'
+      "
+    >
+      heads
+    </button>
+
+    <button
+      onclick="
+        // showMove('tails');
+        document.querySelector('.paraText').innerHTML = 'You chose: Tails.'
+      "
+    >
+      tails
+    </button>
+
+    <p class="paraText"></p>
+<!-- ------------------------------------------------------------------------- -->
+   
+   <input type="text" placeholder="Enter your name " onkeydown=" keyDown()
+    //other way without function
+    " />
+
+    <button
+      class="SubmitBtn"
+      onclick="
+        
+        document.querySelector('.paraText1').innerHTML =
+          `Your name is: ${inputElement.value}`;
+      "
+    >
+      Submit
+    </button>
+    <p class="paraText1"></p>
+
+    <script>
+      console.log(document.querySelector(".js-button"));
+
+      document.querySelector(".js-button2").innerHTML = "9b done";
+
+      // function showMove(userInput){
+      //    const move = document.querySelector('.paraText')
+      //     if(userInput === 'heads') {
+      //         move.innerHTML = `You chose: ${userInput}`
+      //     }else if (userInput === 'tails') {
+      //         move.innerHTML = `You chose: ${userInput}`
+      //     }
+
+      // }
+      //      ⬆️
+      //
+      //i complicated too much
+      const inputElement = document.querySelector('input');
+      
+      function keyDown() {
+        if (event.key === 'Enter') {
+          document.querySelector(".paraText1").innerHTML =
+            `Your name is: ${inputElement.value}`;
+        }
+      }
+    </script>
+  </body>
+</html>

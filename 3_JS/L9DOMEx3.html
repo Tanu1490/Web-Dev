@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="displayQty()">Show Quantity</button>
+
+    <button onclick="updateCartQty(1)">Add to Cart</button>
+
+    <button onclick="updateCartQty(2)">+2</button>
+
+    <button onclick="updateCartQty(3)">+3</button>
+
+    <button onclick="updateCartQty(4)">+4</button>
+
+    <button onclick="updateCartQty(5)">+5</button>
+
+    <button onclick="updateCartQty(-1)">Remove from cart</button>
+
+    <button onclick="updateCartQty(-2)">-2</button>
+
+    <button onclick="updateCartQty(-3)">-3</button>
+
+    <button
+      onclick="
+        CartQty = 0;
+        console.log('Cart was reset.');
+        displayQty();
+      "
+    >
+      Reset cart
+    </button>
+
+    <p class="cartElement"></p>
+
+    <script>
+      let CartQty = 0;
+
+      displayQty();
+      
+      function displayQty() {
+        document.querySelector(".cartElement").innerHTML =
+          `Cart quantity : ${CartQty}`;
+      }
+
+      function updateCartQty(numOfItems) {
+        if (CartQty + numOfItems > 10) alert("The cart is full");
+        else if (CartQty + numOfItems < 0)
+          alert("Not enough items in the cart");
+        else {
+          CartQty += numOfItems;
+          displayQty(CartQty);
+        }
+      }
+    </script>
+  </body>
+</html>
