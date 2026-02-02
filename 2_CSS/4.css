@@ -1,0 +1,55 @@
+.btn1 {
+  padding: 4px 3px;
+  margin-right: 6px;
+  margin-left: 2px;
+}
+
+a {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.btn2 {
+  padding: 4px 3px;
+  margin-right: 2px;
+  margin-left: 6px;
+}
+
+.btn3 {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  transition: padding 0.25s;
+}
+
+.btn3:hover {
+  padding: 10px 22px;
+}
+
+.btn4 {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.352);
+}
+
+.btn4:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: 0 0 0 0;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  margin: 0px 10px;
+}
+
+.btn:hover {
+  padding: 4px 15px;
+  margin: 0px 8px;
+}

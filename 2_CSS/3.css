@@ -1,0 +1,169 @@
+.btn1 {
+  background-color: black;
+  color: white;
+  height: 36px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+
+.btn2 {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 30px;
+  width: 140px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn2:hover {
+  background-color: rgb(253, 202, 0);
+}
+
+.btn3 {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 80px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+}
+
+.btn3:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.141);
+}
+
+.btn4 {
+  background-color: rgb(121, 82, 179);
+  color: white;
+  height: 36px;
+  width: 100px;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn4:hover {
+  background-color: rgb(107, 71, 161);
+}
+
+.btn5 {
+  background-color: white;
+  color: rgb(108, 117, 125);
+  height: 36px;
+  width: 100px;
+  border: 1px rgb(108, 117, 125) solid;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.btn5:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+
+.btn6 {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  height: 30px;
+  width: 200px;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn6:hover {
+  background-color: rgb(3, 76, 148);
+}
+
+.btn7 {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  height: 30px;
+  width: 70px;
+  border: 1px rgb(10, 102, 194) solid;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: border-width 0.15s;
+}
+
+.btn7:hover {
+  border-width: 2px;
+}
+
+.para1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.para2 {
+  color: rgb(0, 136, 0);
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 36px;
+  width: 150px;
+  border-radius: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.button1:hover {
+  background-color: rgb(255, 196, 18);
+}
+
+.button1:active {
+  opacity: 0.7;
+}
+
+.button2 {
+  background-color: rgb(255, 164, 28);
+  border: none;
+  height: 36px;
+  width: 150px;
+  border-radius: 18px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.button2:hover {
+  background-color: rgb(255, 154, 3);
+}
+
+.button2:active {
+  opacity: 0.7;
+}
+
+a {
+  color: rgb(0, 113, 133);
+  transition: color 0.15s;
+}
+
+a:hover {
+  color: rgb(254, 155, 7);
+}

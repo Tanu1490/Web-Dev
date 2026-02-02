@@ -1,0 +1,65 @@
+#btn1 {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  /* height: 36px;
+        width: 105px; */
+  padding: 10px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+
+#btn1:hover {
+  opacity: 0.8;
+  /* opactity is for fading range is 0 to 1 */
+}
+
+/* it is used when */
+#btn1:active {
+  opacity: 0.5;
+}
+
+#btn2 {
+  background-color: white;
+  color: rgb(6, 110, 255);
+  /* height: 36px;
+        width: 62px; */
+  padding: 9px 16px;
+  border-color: rgb(6, 110, 255);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  vertical-align: top;
+}
+
+#btn2:hover {
+  background-color: rgb(6, 110, 255);
+  color: white;
+}
+
+#btn2:active {
+  opacity: 0.8;
+}
+
+#btn3 {
+  background-color: rgb(6, 110, 255);
+  color: white;
+  /* height: 36px;
+        width: 74px; */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#btn3:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
