@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles/4.css">
   </head>
   <body>
     
@@ -11,71 +12,56 @@
 
     <p>
      
-      <button onclick="updateCalculation('1')">1</button>
-      <button onclick="updateCalculation('2') ">2</button>
-      <button onclick="updateCalculation('3') ">3</button>
-      <button onclick="updateCalculation(' + ')">+</button>
+      <button class="btn" onclick="updateCalculation('1')">1</button>
+      <button class="btn" onclick="updateCalculation('2') ">2</button>
+      <button class="btn" onclick="updateCalculation('3') ">3</button>
+      <button class="btn btnOp" onclick="updateCalculation(' + ')">+</button>
       <br />
     </p>
 
     <p>
-      <button onclick="updateCalculation('4')">4</button>
-      <button onclick="updateCalculation('5')">5</button>
-      <button onclick="updateCalculation('6')">6</button>
-      <button onclick="updateCalculation(' - ') ">-</button>
+      <button class="btn" onclick="updateCalculation('4')">4</button>
+      <button class="btn" onclick="updateCalculation('5')">5</button>
+      <button class="btn" onclick="updateCalculation('6')">6</button>
+      <button class="btn btnOp" onclick="updateCalculation(' - ') ">-</button>
       <br />
     </p>
 
     <p>
-      <button onclick="updateCalculation('7')">7</button>
-      <button onclick="updateCalculation('8')">8</button>
-      <button onclick="updateCalculation('9')">9</button>
-      <button onclick="updateCalculation(' * ')">*</button>
+      <button class="btn" onclick="updateCalculation('7')">7</button>
+      <button class="btn" onclick="updateCalculation('8')">8</button>
+      <button class="btn" onclick="updateCalculation('9')">9</button>
+      <button class="btn btnOp" onclick="updateCalculation(' * ')">*</button>
       <br />
     </p>
 
     <p>
-      <button onclick="updateCalculation('0')">0</button>
-      <button onclick="updateCalculation('.')">.</button>
+      <button class="btn" onclick="updateCalculation('0')">0</button>
+      <button class="btn" onclick="updateCalculation('.')">.</button>
       <button
-        onclick="
+        class="btn " onclick="
           calculation = eval(calculation);
-          CalElement();
+          displayCal();
           localStorage.setItem('calculation', JSON.stringify(calculation));
         "
       >
         =
       </button>
-      <button onclick="updateCalculation(' / ') ">/</button>
+      <button class="btn btnOp" onclick="updateCalculation(' / ') ">/</button>
       <br />
     </p>
 
     <button
-      onclick="
-        calculation = '';
-        document.querySelector('.js-CalResult')
-         .innerHTML = 'Cleared.';
+      class="btn Clearbtn" onclick="
+          calculation = '';
+          document.querySelector('.js-CalResult')
+         .innerHTML = '';
         localStorage.setItem('calculation', calculation);
       "
     >
       Clear
     </button>
 
-    <script>
-      let calculation = localStorage.getItem("calculation") || '';
-     
-      if (calculation !== '') CalElement();
-
-      function CalElement(){
-        document.querySelector('.js-CalResult')
-         .innerHTML = calculation;
-      }
-
-      function updateCalculation(input) {
-        calculation += input;
-        CalElement();
-        localStorage.setItem("calculation", JSON.stringify(calculation));
-      }
-    </script>
+    <script src="scripts/4.js"></script>
   </body>
 </html>

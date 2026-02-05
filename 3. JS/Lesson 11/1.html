@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arryas and Loops</title>
+</head>
+<body>
+    <script>
+        let arr = [10,30,40];
+        console.log(arr);
+        console.log(arr[0]);
+        arr[0] = 90;
+        console.log(arr[0]);
+
+        let arr1 = [1,'hi',{name: 'jake'}, [45,89]];
+        console.log(typeof [45,89])
+        console.log(Array.isArray([1,3]))   //since array is special type of object it has methods and properties as well
+
+        console.log(arr.length);
+
+        arr.push(100);
+        console.log(arr);
+
+        arr.splice(0,2)  //1st no - index we want to remove 2nd- no. of values to remove
+
+        console.log(arr);
+
+
+        //loops
+        let i = 1;
+        while(i <= 5){
+            console.log(i);
+            i++;
+        }
+
+        for(let i=1 ; i<=5 ; i*=2){
+            console.log(i);
+        }
+
+        let randomNumber = 0;
+
+        while(randomNumber < 0.7){
+            randomNumber = Math.random();
+        }
+
+        console.log(randomNumber);
+
+        const TodoList = ['make dinner' , 'wash dishes'];
+
+        console.log(TodoList.length)
+
+        for(let index = 0 ; index < TodoList.length ; index++){
+            console.log(TodoList[index]);
+        }
+
+        for(let x of TodoList){
+            console.log(x);
+        }
+
+        let num = [1,1,3];
+        let sum = 0;
+        for(let x of num){ 
+            sum += x;
+        }
+
+        console.log(sum);
+
+        let DoubleNum = [];
+        for(let y of num){ 
+            y*=2;
+            DoubleNum.push(y);
+        }
+
+        console.log(DoubleNum);
+
+    </script>
+</body>
+</html>

@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/3.css">
 </head>
 <body>
+    <!-- button next part -->
+     <button class="btn4 btn" onclick="
+    Clicked('.btn4');
+    ">Gaming</button>
+    <button class="btn5 btn" onclick="Clicked('.btn5')">Music</button>
+    <button class="btn6 btn" onclick="Clicked('.btn6')">Tech</button>
     
+    <br>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping. </p>
+    <p>Orders above $40 = FREE shipping.</p>
+
+    <input placeholder="Cost of order" class="js-input" onkeydown="handleCostKeydown(event);"
+    onkeyup="handleNeg()"> 
+
+    <button  class="CalBtn" onclick="
+     cal();
+    ">Calculate</button>
+
+     <p class="js-calCost"></p>
+    <script src="scripts/3.js"></script>
+
 </body>
 </html>
