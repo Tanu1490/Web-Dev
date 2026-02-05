@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom project</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .subscribeBtn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 35px;
+      }
+
+      .is-subscribed {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+
+      input{
+        padding: 10px;
+        font-size: 15px;
+      }
+
+      .calBtn{
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 12px 15px;
+        font-size: 15px ;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button class="js-btn subscribeBtn" onclick="Subscribe()">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders above $40 = FREE shipping.</p>
+
+    <input
+      placeholder="Cost of order"
+      class="js-input"
+      onkeydown="handleCostKeydown()"
+    />
+
+    <button class="calBtn" onclick="cal()">Calculate</button>
+
+    <p class="js-calCost"></p>
+
+    <p>Rock Paper Scissors</p>
+    <a href="2.html">Click Here</a>
+
+    <script>
+      function handleCostKeydown() {
+        if (event.key === "Enter") cal();
+      }
+
+      function cal() {
+        const inputElement = document.querySelector(".js-input");
+        let cost = Number(inputElement.value);
+        if (cost < 40) {
+          cost += 10;
+          document.querySelector(".js-calCost").innerHTML = `$${cost}`;
+        } else document.querySelector(".js-calCost").innerHTML = `$${cost}`;
+      }
+      function Subscribe() {
+        let btnElement = document.querySelector(".js-btn");
+
+        if (btnElement.innerText === "Subscribe") {
+          btnElement.innerHTML = "Subscribed";
+          // btnElement.style.backgroundColor = "rgb(240,240,240)";
+          // btnElement.style.color = "black";
+
+          // from tutorial - add new class and style it
+          btnElement.classList.add("is-subscribed");
+        } else {
+          btnElement.innerHTML = "Subscribe";
+          // btnElement.style.backgroundColor = "black";
+          // btnElement.style.color = "white";
+          btnElement.classList.remove("is-subscribed");
+        }
+      }
+    </script>
+  </body>
+</html>
