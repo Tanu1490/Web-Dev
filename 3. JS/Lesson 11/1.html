@@ -20,10 +20,12 @@
         console.log(arr.length);
 
         arr.push(100);
+        arr.pop();
         console.log(arr);
 
-        arr.splice(0,2)  //1st no - index we want to remove 2nd- no. of values to remove
-
+        arr.splice(0,2,90,90)  //1st no - start index we want to star removing from  2nd- no. of values to remove 3rd 4th places...it can be value to add from the start index 
+        console.log(arr);
+        arr.splice(0,2);
         console.log(arr);
 
 
@@ -46,7 +48,10 @@
 
         console.log(randomNumber);
 
-        const TodoList = ['make dinner' , 'wash dishes'];
+        const TodoList = [
+            'make dinner' , 
+            'wash dishes'
+        ];
 
         console.log(TodoList.length)
 

@@ -1,24 +1,28 @@
-const todoArray = [] ;
+const todoListArray = [];
 
+function renderTodoList(){
+   let todolistHtml = ``;
+for(let i = 0 ; i<todoListArray.length ; i++){
+   const todo = todoListArray[i];
+   const html = `<p>${todo}</p>`;
+   todolistHtml += html;
 
-function Add(){
-   todoArray.push(document.querySelector('.todo-Input').value);
-   console.log(todoArray);
-   document.querySelector('.todo-Input').value = '';
 }
 
-// let todoListHTML = '';
+console.log(todolistHtml)
+document.querySelector('.ListText').innerHTML = todolistHtml;
 
-// function Add2(){
-//    todoArray.push(document.querySelector('.todo-Input2').value);
-   
-  
-//    document.querySelector('.todo-Input2').value = '';
+}
 
-//    for(let i = 0; i<todoArray.length;i++){
-//     const html = `<p>${todoArray[i]}</p>`;
-//     todoListHTML += html;
-//    }
-//     document.querySelector('.todoTask').innerHTML = todoListHTML; 
-// }
+function addTasks(){
+  const inputElement = document.querySelector('.js-inputValue');
+
+  todoListArray.push(inputElement.value)
+
+  console.log(todoListArray);
+
+  inputElement.value = '';
+
+  renderTodoList();
+}
 
