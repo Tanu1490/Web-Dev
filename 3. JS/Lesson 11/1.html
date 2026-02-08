@@ -1,84 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arryas and Loops</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let arr = [10,30,40];
-        console.log(arr);
-        console.log(arr[0]);
-        arr[0] = 90;
-        console.log(arr[0]);
+      let arr = [10, 30, 40];
+      console.log(arr);
+      console.log(arr[0]);
+      arr[0] = 90;
+      console.log(arr[0]);
 
-        let arr1 = [1,'hi',{name: 'jake'}, [45,89]];
-        console.log(typeof [45,89])
-        console.log(Array.isArray([1,3]))   //since array is special type of object it has methods and properties as well
+      let arr1 = [1, "hi", { name: "jake" }, [45, 89]];
+      console.log(typeof [45, 89]);
+      console.log(Array.isArray([1, 3])); //since array is special type of object it has methods and properties as well
 
-        console.log(arr.length);
+      console.log(arr.length);
 
-        arr.push(100);
-        arr.pop();
-        console.log(arr);
+      arr.push(100);
+      arr.pop();
+      console.log(arr);
 
-        arr.splice(0,2,90,90)  //1st no - start index we want to star removing from  2nd- no. of values to remove 3rd 4th places...it can be value to add from the start index 
-        console.log(arr);
-        arr.splice(0,2);
-        console.log(arr);
+      arr.splice(0, 2, 90, 90); //1st no - start index we want to star removing from  2nd- no. of values to remove 3rd 4th places...it can be value to add from the start index
+      console.log(arr);
+      arr.splice(0, 2);
+      console.log(arr);
 
+      //loops
+      let i = 1;
+      while (i <= 5) {
+        console.log(i);
+        i++;
+      }
 
-        //loops
-        let i = 1;
-        while(i <= 5){
-            console.log(i);
-            i++;
-        }
+      for (let i = 1; i <= 5; i *= 2) {
+        console.log(i);
+      }
 
-        for(let i=1 ; i<=5 ; i*=2){
-            console.log(i);
-        }
+      let randomNumber = 0;
 
-        let randomNumber = 0;
+      while (randomNumber < 0.7) {
+        randomNumber = Math.random();
+      }
 
-        while(randomNumber < 0.7){
-            randomNumber = Math.random();
-        }
+      console.log(randomNumber);
 
-        console.log(randomNumber);
+      const TodoList = ["make dinner", "wash dishes"];
 
-        const TodoList = [
-            'make dinner' , 
-            'wash dishes'
-        ];
+      console.log(TodoList.length);
 
-        console.log(TodoList.length)
+      for (let index = 0; index < TodoList.length; index++) {
+        console.log(TodoList[index]);
+      }
 
-        for(let index = 0 ; index < TodoList.length ; index++){
-            console.log(TodoList[index]);
-        }
+      for (let x of TodoList) {
+        console.log(x);
+      }
 
-        for(let x of TodoList){
-            console.log(x);
-        }
+      let num = [1, 1, 3];
+      let sum = 0;
+      for (let x of num) {
+        sum += x;
+      }
 
-        let num = [1,1,3];
-        let sum = 0;
-        for(let x of num){ 
-            sum += x;
-        }
+      console.log(sum);
 
-        console.log(sum);
+      let DoubleNum = [];
+      for (let y of num) {
+        y *= 2;
+        DoubleNum.push(y);
+      }
 
+      console.log(DoubleNum);
+
+      //Arrays are references
+      const array1 = [1, 3, 4]; //array1 doesn't contain this array it only points to the mem add where this array is saved
+
+      // const arr2 = array1;  //arr2 don't have copy of array1 it points to the mem add wrhere aar1 is pointing
+
+      //problem here is both are pointing to same mem and we dont want that
+      // we will make copy of the array and then point it to that mem
+      const arr2 = array1.slice();
+
+      //  [1,3,4] ---> array1
+      //  [1,3,4] ---> arr2
+
+      arr2.push(34);
+
+      console.log(array1);
+      console.log(arr2);
+
+      const arr3 = [1, 2, 3];
+      // to get the value out of the array
+      // instead of writing
+      // const firstvalue = arr3[0];
+      // const secondValue = arr[1];
+
+      const [firstValue, secondValue, thirdValue] = [1, 2, 3];
+      console.log(firstValue);
+      console.log(secondValue);
+      console.log(thirdValue);
+
+      //break - The loop stops completely ,Execution continues after the loop
+      //  and continue in loops
+
+      for (let i = 1; i <= 10; i++) {
+        if (i === 3) continue;
+        console.log(i);
+        // if(i===8 ) break;
+      }
+
+      for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0) continue;
+        console.log(i);
+      }
+
+      let j = 1;
+      while (j <= 10) {
+        if (j % 3 === 0) {
+          j++; // therefore manually increase
+          continue;
+        } //Skips the rest of the current loop iteration which will cause infinite loop
+        console.log(j);
+        j++;
+      }
+
+      function doubleArray(array) {
         let DoubleNum = [];
-        for(let y of num){ 
-            y*=2;
-            DoubleNum.push(y);
+
+        for (let y of array) {
+          if (y === 0) break;
+          y *= 2;
+          DoubleNum.push(y);
         }
 
-        console.log(DoubleNum);
+        // console.log(DoubleNum);
 
+        return DoubleNum;
+      }
+
+      doubleArray([1, 2, 3]);
+      console.log(doubleArray([1, 4, 5]));
+      console.log(doubleArray([1, 4, 5, 9, 0, 6]));
     </script>
-</body>
+  </body>
 </html>
