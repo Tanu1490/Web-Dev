@@ -1,32 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const arr = ['hello' , 'world' , 'search' , 'good'];
-
-        let result;
-       function check(array){ 
-        for(let i = 0 ; i < arr.length ; i++){
-            if(arr[i] === 'search'){
-                result = i;
-                break;
-            }else{
-                result = -1;
-            }
+      const arr = ["hello", "world", "search", "good"];
+      let result = -1;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "search") {
+          result = i;
+          break;
         }
-        return result;
-    }
-
-    console.log(check(arr));
+      }
 
 
+      
+      
 
-        
+      //   console.log(result);
+
+      const arr1 = ["not", "found"];
+
+      let index = -1;
+      for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === "search") {
+          index = i;
+          break;
+        }
+      }
+      //   console.log(index);
+
+      function findIndex(array, word) {
+        // let index = -1;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            // index = i;
+            // break;
+
+        return i;
+          }
+        }
+
+        // return index;
+        return -1;
+      }
+
+      console.log(findIndex(["green", "red", "blue", "red"], "red"));
+      console.log(findIndex(["green", "red", "blue", "red"], "yellow"));
+
+
+      function removeEggs(foods){
+        // for(let i = foods.length - 1 ; i >= 0  ; i--){
+        //     if(foods[i] === 'egg'){
+        //         foods.splice(i,1);
+        //     }
+        // }
+
+        let result =[];
+        let cnt = 0;
+        for(let i=0; i < foods.length ; i++){
+            if(foods[i] === 'egg') cnt++;
+
+            if(foods[i] === 'egg' && cnt <= 2){
+               continue;
+            }
+
+            result.push(foods[i]);
+
+        }
+
+        console.log(result)
+
+        // const newarray  = foods;
+        // newarray.reverse();
+
+       
+
+
+    //    return foods;
+      }
+
+      removeEggs(['egg','apple','egg','egg','ham']);
+
+      
     </script>
-</body>
+  </body>
 </html>
