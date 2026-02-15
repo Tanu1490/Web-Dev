@@ -78,7 +78,7 @@
       //Arrays are references
       const array1 = [1, 3, 4]; //array1 doesn't contain this array it only points to the mem add where this array is saved
 
-      // const arr2 = array1;  //arr2 don't have copy of array1 it points to the mem add wrhere aar1 is pointing
+      // const arr2 = array1;  //arr2 don't have copy of array1 it points to the mem add where array1 is pointing
 
       //problem here is both are pointing to same mem and we dont want that
       // we will make copy of the array and then point it to that mem
@@ -104,7 +104,7 @@
       console.log(thirdValue);
 
       //break - The loop stops completely ,Execution continues after the loop
-      //  and continue in loops
+     
 
       for (let i = 1; i <= 10; i++) {
         if (i === 3) continue;
@@ -122,7 +122,7 @@
         if (j % 3 === 0) {
           j++; // therefore manually increase
           continue;
-        } //Skips the rest of the current loop iteration which will cause infinite loop
+        } // continue - Skips the rest of the current loop iteration which will cause infinite loop
         console.log(j);
         j++;
       }
