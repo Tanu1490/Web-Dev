@@ -6,6 +6,7 @@
     <title>Advanced Functions</title>
   </head>
   <body>
+    
     <script>
       // Function
       function greeting(){
@@ -93,6 +94,62 @@
 
       // If we need to use break;
       // Then it's better to use a regular for loop.
+
+      // Arrow functions - it doesnt support hoisting
+
+      const regularfunction = function(param , param2){
+        console.log('hello');
+        return 7;
+      }
+      const arrowFunction = (param , param2) => {
+        console.log('hello');
+        return 7;
+      }
+
+      arrowFunction();
+
+      // some shortcuts that a regular fun. don't have
+      const oneParam = param =>{       //can remove braceket if only 1 parameter
+        console.log(param + 1);
+      }
+
+      oneParam(2);
+
+
+      // const oneline = () => {
+      // return 2+3;
+      // }
+
+      // if only one line can write it without curly brackets and can also remove return
+
+      const oneline = () => 2+3;
+
+     console.log( oneline());
+
+
+      ["make dinner", "watch youtube", "wash dishes"].forEach(
+        (value, index) => {
+          if (value === "watch youtube") {
+            return;
+          }
+          console.log(index);
+          console.log(value);
+        },
+      );
+
+      const object2 = {
+        method : () => {
+
+        },
+
+        // object has this shortcut for functions
+        method(){
+
+        }
+      }
+
+
+
     </script>
   </body>
 </html>

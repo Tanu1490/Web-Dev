@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+      
+      " class="js-btn">Click</button>
+    <script>
+        const btnEle = document.querySelector('.js-btn');
+
+        // .addEventListener() - lets us run some code when we interact with the element
+
+        // takes 2 para - 1st event 2nd function to run when that event is triggered
+
+        // it has some adv over using the attributes
+        // it lets us add multiple event listeners for an event
+        // we can remove an event listener 
+
+        const addEventListener = ()=>{
+           console.log('click1');
+
+        }
+        btnEle.addEventListener('click',addEventListener);
+
+        btnEle.addEventListener('click',()=>{
+            console.log('clicked');
+        })
+
+        btnEle.removeEventListener('click',addEventListener);
+
+        
+    </script>
+</body>
+</html>

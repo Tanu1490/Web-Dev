@@ -13,78 +13,106 @@
 
     <p class="display-msg"></p>
 
-    <button class="AddBtn" onclick = "Messages++" >Add</button>
-    <button class="DeleteBtn" onclick = " 
-    if(Messages > 0){
-      Messages--;
-    }
+    <button
+      class="AddBtn"
+      onclick="
+        Messages++;
+        updateNotification();
+      "
+    >
+      Add
+    </button>
 
-    if()
-    " >Delete</button>
+    <button
+      class="DeleteBtn"
+      onclick="
+        if (Messages > 0) Messages--;
+        updateNotification();
+      "
+    >
+      Delete
+    </button>
 
     <script>
-      
-        const add = function () {
-          console.log(2 + 3);
-        };
+      const add = function () {
+        console.log(2 + 3);
+      };
 
-        add();
-        add();
-        // ----------------------------
+      add();
+      add();
+      // ----------------------------
 
-        function runTwice(fun) {
-          fun();
-          fun();
+      function runTwice(fun) {
+        fun();
+        fun();
+      }
+
+      runTwice(function () {
+        console.log("12b");
+      });
+
+      runTwice(add);
+
+      // --------------------------------
+
+      function updateBtn() {
+        const StartBtnEle = document.querySelector(".start-Btn");
+
+        // --next update
+        StartBtnEle.innerHTML = "Loading..";
+
+        setTimeout(function () {
+          StartBtnEle.innerHTML = "Finished!";
+        }, 1000);
+      }
+
+      // -------------------------------------
+      let timeoutId;
+
+      function display() {
+        const AddBtnEle = document.querySelector(".display-msg");
+        // --next update
+        clearTimeout(timeoutId);
+
+        AddBtnEle.innerHTML = "Added";
+
+        timeoutId = setTimeout(function () {
+          AddBtnEle.innerHTML = "";
+        }, 2000);
+      }
+      // ----------------------------------------
+
+      let Messages = 2;
+
+      // this tells when page loads does notifi. already running
+      let isDisplayingNotification = true;
+
+      // this is for whenever message changes do below change
+      function updateNotification() {
+        if (Messages === 0) {
+          clearInterval(intervalID); //this stops showing notif.
+          document.title = "App";
+          isDisplayingNotification = false;
         }
 
-        runTwice(function () {
-          console.log("12b");
-        });
-
-        runTwice(add);
-
-        // --------------------------------
-
-        function updateBtn() {
-
-           const StartBtnEle = document.querySelector(".start-Btn");
-
-           // --next update
-            StartBtnEle.innerHTML = 'Loading..';
-
-          setTimeout(function () {
-            StartBtnEle.innerHTML = "Finished!";
-          }, 1000);
-        }
-
-        // -------------------------------------
-        let timeoutId;
-
-        function display(){
-          const AddBtnEle = document.querySelector('.display-msg');
-          // --next update
-          clearTimeout(timeoutId);
-
-          AddBtnEle.innerHTML = 'Added';
-
-           timeoutId = setTimeout(function(){
-            AddBtnEle.innerHTML = '';
-          },2000);
-
-        }
-        // ----------------------------------------
-
-        let Messages = 2;
-        setInterval(function(){
-          if(document.title === 'App'){
-            document.title = `(${Messages}) New Messages`;
-          }else{
-            document.title = 'App';
+        if (Messages > 0) {
+          if (isDisplayingNotification === false) {
+            startNotification();
+            isDisplayingNotification = true;
           }
-        },1000);
-      
-       
-        
+        }
+      }
+      let intervalID;
+
+      function startNotification() {
+        intervalID = setInterval(function () {
+          if (document.title === "App") {
+            document.title = `(${Messages}) New Messages`;
+          } else {
+            document.title = "App";
+          }
+        }, 1000);
+      }
     </script>
   </body>
 </html>

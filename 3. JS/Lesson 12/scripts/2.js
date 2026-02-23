@@ -19,7 +19,7 @@ let intervalId;
 
 function autoPlay() {
   if (!isAutoPlaying) {
-    intervalId = setInterval(function () {
+    intervalId = setInterval( () => {
       const playerMove = pickCompMove();
       playGame(playerMove);
     }, 1000);
@@ -29,6 +29,37 @@ function autoPlay() {
     isAutoPlaying = false;
   }
 }
+
+document.querySelector('.js-Rock-btn')
+//  .addEventListener('click', playGame('rock'));  - playGame('rock') this will run the function and here we need to give function 
+
+ .addEventListener('click', () => {
+    playGame('Rock');
+ });
+
+
+ document.querySelector('.js-Paper-btn')
+ .addEventListener('click', () => {
+    playGame('Paper');
+ });
+
+ 
+ document.querySelector('.js-Scissors-btn')
+ .addEventListener('click', () => {
+    playGame('Scissors');
+ });
+
+ document.body.addEventListener('keydown', (event) => {
+  console.log('key');
+  if(event.key === 'r'){
+    playGame('Rock');
+  }else if(event.key === 'p'){
+     playGame('Paper');
+  }else if(event.key === 's'){
+     playGame('Scissors');
+  }
+ })
+
 
 function playGame(playerMove) {
   const CompMove = pickCompMove();

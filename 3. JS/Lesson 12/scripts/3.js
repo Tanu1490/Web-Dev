@@ -32,7 +32,7 @@ function renderTodoList() {
   let todoListHTML = ``;
 
   // ------------used forEach instead of for loop
-  todoList.forEach(function(todoObject , index){
+  todoList.forEach((todoObject , index) =>{
 
     const { task, dueDate } = todoObject; 
     const html = `
@@ -75,6 +75,11 @@ function renderTodoList() {
  
   document.querySelector(".showhtml").innerHTML = todoListHTML;
 }
+
+document.querySelector('.js-add-todo')
+ .addEventListener('click', ()=>{
+   addTodo();
+ })
 
 function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
