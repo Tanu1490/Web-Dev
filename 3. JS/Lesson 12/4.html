@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Functions Excercise</title>
+  </head>
+  <body>
+    <button class="start-Btn" onclick="updateBtn()">Start</button>
+    <br />
+    <br />
+    <button onclick="display()">Add to cart</button>
+
+    <p class="display-msg"></p>
+
+    <button class="AddBtn" onclick = "Messages++" >Add</button>
+    <button class="DeleteBtn" onclick = " 
+    if(Messages > 0){
+      Messages--;
+    }
+
+    if()
+    " >Delete</button>
+
+    <script>
+      
+        const add = function () {
+          console.log(2 + 3);
+        };
+
+        add();
+        add();
+        // ----------------------------
+
+        function runTwice(fun) {
+          fun();
+          fun();
+        }
+
+        runTwice(function () {
+          console.log("12b");
+        });
+
+        runTwice(add);
+
+        // --------------------------------
+
+        function updateBtn() {
+
+           const StartBtnEle = document.querySelector(".start-Btn");
+
+           // --next update
+            StartBtnEle.innerHTML = 'Loading..';
+
+          setTimeout(function () {
+            StartBtnEle.innerHTML = "Finished!";
+          }, 1000);
+        }
+
+        // -------------------------------------
+        let timeoutId;
+
+        function display(){
+          const AddBtnEle = document.querySelector('.display-msg');
+          // --next update
+          clearTimeout(timeoutId);
+
+          AddBtnEle.innerHTML = 'Added';
+
+           timeoutId = setTimeout(function(){
+            AddBtnEle.innerHTML = '';
+          },2000);
+
+        }
+        // ----------------------------------------
+
+        let Messages = 2;
+        setInterval(function(){
+          if(document.title === 'App'){
+            document.title = `(${Messages}) New Messages`;
+          }else{
+            document.title = 'App';
+          }
+        },1000);
+      
+       
+        
+    </script>
+  </body>
+</html>

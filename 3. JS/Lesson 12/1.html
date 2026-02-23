@@ -7,75 +7,75 @@
   </head>
   <body>
     <script>
-      // // Function
-      // function greeting(){
-      //     console.log("Hello");
-      // }
+      // Function
+      function greeting(){
+          console.log("Hello");
+      }
 
-      // greeting();
+      greeting();
 
-      // // Functions are also values means we can save function inside variable
+      // Functions are also values means we can save function inside variable
 
-      // // Anonymous func - func without a name
-      // const fun1 = function (){             //we can access the function
-      //     console.log("Hello there");      //without function name therefore
-      // }                                    //remove name of function
+      // Anonymous func - func without a name
+      const fun1 = function (){             //we can access the function
+          console.log("Hello there");      //without function name therefore
+      }                                    //remove name of function
 
-      // console.log(fun1);
-      // console.log(typeof fun1);
+      console.log(fun1);
+      console.log(typeof fun1);
 
-      // // we can run function inside the variable
-      // fun1();
+      // we can run function inside the variable
+      fun1();
 
-      // // we can also save function in object
+      // we can also save function in object
 
-      // const object1 = {
-      //     num : 2,
-      //     fun : function(){         //method is a function that is
-      //         console.log('Hello world');    //stored as a property of an object
-      //     }
-      // };
+      const object1 = {
+          num : 2,
+          fun : function(){         //method is a function that is
+              console.log('Hello world');    //stored as a property of an object
+          }
+      };
 
-      // object1.fun();
+      object1.fun();
 
-      // // we can pass a value to a function
-      // function display(param){
-      //     console.log(param);
-      // }
+      // we can pass a value to a function
+      function display(param){
+          console.log(param);
+      }
 
-      // display(2);
+      display(2);
 
-      // // pass function into a function
+      // pass function into a function
 
-      // function run(param){
-      //     param();
-      // };
+      function run(param){
+          param();
+      };
 
-      // run(function(){
-      //     console.log("Welcome");
-      // });
+      run(function(){
+          console.log("Welcome");
+      });
 
       // setTimeout -  used to execute a function or a specified piece of code in future
       // takes 2 para. - 1st para - funct. we want to execute
-      // 2nd para - honw long to wait before running this func (1000 ms = 1s)
+      // 2nd para - how long to wait before running this func (1000 ms = 1s)
 
       // Asynrochonous code - means computer wont wait for a line to finish before going to the next line
 
-      // setTimeout(function(){
-      //     console.log('timeout');
-      // }, 3000 );
+      setTimeout(function(){
+          console.log('timeout');
+      }, 3000 );
 
-      // console.log('next line');
+      console.log('next line');
 
-      // //synrochonous code - means computer will wait for a line to finish before going to the next line
+      //synrochonous code - means computer will wait for a line to finish before going to the next line
 
-      // // setInterval
+      // setInterval
 
-      // setInterval(function(){
-      //     console.log('interval');
-      // },3000);
+      setInterval(function(){
+          console.log('interval');
+      },3000);
 
-      // console.log('next line 2');
+      console.log('next line 2');
 
       // another way to loop through an array
       // forEach - iterates over elements in an array or collection, executing a provided function for each item
