@@ -7,16 +7,15 @@ let todoList = [
     task: "Do dishes",
     dueDate: "2022-10-6",
   },
-]; 
+];
 
 // ------------------------------------------
 // When loading the page, load from localStorage.
 
-let list_In_LC = localStorage.getItem('todoList');
-if(list_In_LC){
+let list_In_LC = localStorage.getItem("todoList");
+if (list_In_LC) {
   todoList = JSON.parse(list_In_LC);
 }
-
 
 // const todoList = JSON.parse(localStorage.getItem('todoList')) || [{
 //   name: 'make dinner',
@@ -32,54 +31,56 @@ function renderTodoList() {
   let todoListHTML = ``;
 
   // ------------used forEach instead of for loop
-  todoList.forEach((todoObject , index) =>{
-
-    const { task, dueDate } = todoObject; 
+  todoList.forEach((todoObject, index) => {
+    const { task, dueDate } = todoObject;
     const html = `
     <div>${task} </div>
     <div>${dueDate}</div>
-    <button class="delete-btn" onClick = "
-       todoList.splice(${index},1);
-       saveToStorage();
-       renderTodoList();
+    <button class="delete-btn js-delete-btn" 
     ">Delete</button>
 
  `;
 
     todoListHTML += html;
-  })
+  });
 
-//   for (let i = 0; i < todoList.length; i++) {
-//    const todoObject = todoList[i];
-//     // const task = todoObject.task;
-//     // const dueDate = todoObject.dueDate;
+  //   for (let i = 0; i < todoList.length; i++) {
+  //    const todoObject = todoList[i];
+  //     // const task = todoObject.task;
+  //     // const dueDate = todoObject.dueDate;
 
-//     //shortcut for above when property and var name is same
+  //     //shortcut for above when property and var name is same
 
-//     const { task, dueDate } = todoObject; //can also add both in one place
+  //     const { task, dueDate } = todoObject; //can also add both in one place
 
-//     const html = `
-//     <div>${task} </div>
-//     <div>${dueDate}</div>
-//     <button class="delete-btn" onClick = "
-//        todoList.splice(${i},1);
-//        saveToStorage();
-//        renderTodoList();
-//     ">Delete</button>
+  //     const html = `
+  //     <div>${task} </div>
+  //     <div>${dueDate}</div>
+  //     <button class="delete-btn" onClick = "
+  //        todoList.splice(${i},1);
+  //        saveToStorage();
+  //        renderTodoList();
+  //     ">Delete</button>
 
-//  `;
+  //  `;
 
-//     todoListHTML += html;
-//   }
+  //     todoListHTML += html;
+  //   }
 
- 
   document.querySelector(".showhtml").innerHTML = todoListHTML;
+
+  document.querySelectorAll(".js-delete-btn").forEach((deleteButton, index) => {
+    deleteButton.addEventListener("click", () => {
+      todoList.splice(index, 1);
+      saveToStorage();
+      renderTodoList();
+    });
+  });
 }
 
-document.querySelector('.js-add-todo')
- .addEventListener('click', ()=>{
-   addTodo();
- })
+document.querySelector(".js-add-todo").addEventListener("click", () => {
+  addTodo();
+});
 
 function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
@@ -90,8 +91,6 @@ function addTodo() {
 
   const dueDate = dateElement.value;
 
-
-
   todoList.push({
     // task: task,
     // dueDate: dueDate,
@@ -99,16 +98,15 @@ function addTodo() {
     //when property and value have same name use shorthand property
 
     task,
-    dueDate
+    dueDate,
   });
 
   inputElement.value = "";
-  dateElement.value = ""
+  dateElement.value = "";
   renderTodoList();
   saveToStorage();
-
 }
 
 function saveToStorage() {
-  localStorage.setItem('todoList', JSON.stringify(todoList));
+  localStorage.setItem("todoList", JSON.stringify(todoList));
 }
