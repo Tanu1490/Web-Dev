@@ -6,32 +6,16 @@
     <title>Advanced Functions Excercise</title>
   </head>
   <body>
-    <button class="start-Btn" onclick="updateBtn()">Start</button>
+    <button class="start-Btn">Start</button>
     <br />
     <br />
-    <button onclick="display()">Add to cart</button>
+    <button class="Cart-Btn">Add to cart</button>
 
     <p class="display-msg"></p>
 
-    <button
-      class="AddBtn"
-      onclick="
-        Messages++;
-        updateNotification();
-      "
-    >
-      Add
-    </button>
+    <button class="AddBtn">Add</button>
 
-    <button
-      class="DeleteBtn"
-      onclick="
-        if (Messages > 0) Messages--;
-        updateNotification();
-      "
-    >
-      Delete
-    </button>
+    <button class="DeleteBtn">Delete</button>
 
     <script>
       const add = function () {
@@ -55,13 +39,31 @@
 
       // --------------------------------
 
+      document.querySelector(".start-Btn").addEventListener("click", () => {
+        updateBtn();
+      });
+
+      document.querySelector(".Cart-Btn").addEventListener("click", () => {
+        display();
+      });
+
+      document.querySelector(".AddBtn").addEventListener("click", () => {
+        Messages++;
+        updateNotification();
+      });
+
+      document.querySelector(".DeleteBtn").addEventListener("click", () => {
+        if (Messages > 0) Messages--;
+        updateNotification();
+      });
+
       function updateBtn() {
         const StartBtnEle = document.querySelector(".start-Btn");
 
         // --next update
         StartBtnEle.innerHTML = "Loading..";
 
-        setTimeout(function () {
+        setTimeout(() => {
           StartBtnEle.innerHTML = "Finished!";
         }, 1000);
       }
@@ -76,7 +78,7 @@
 
         AddBtnEle.innerHTML = "Added";
 
-        timeoutId = setTimeout(function () {
+        timeoutId = setTimeout(() => {
           AddBtnEle.innerHTML = "";
         }, 2000);
       }
