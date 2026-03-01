@@ -1,46 +1,75 @@
-const products = [
-  {
-    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+// const products = [
+//   {
+//     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
 
-    name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+//     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
 
-    rating: {
-      stars: 4.5,
-      count: 87,
-    },
+//     rating: {
+//       stars: 4.5,
+//       count: 87,
+//     },
 
-    priceCents: 1090,
-  },
-  {
-    image: "images/products/intermediate-composite-basketball.jpg",
+//     priceCents: 1090,
+//   },
+//   {
+//     image: "images/products/intermediate-composite-basketball.jpg",
 
-    name: "Intermediate Size Basketball",
+//     name: "Intermediate Size Basketball",
 
-    rating: {
-      stars: 4,
-      count: 127,
-    },
+//     rating: {
+//       stars: 4,
+//       count: 127,
+//     },
 
-    priceCents: 2095,
-  },
-  {
-    image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+//     priceCents: 2095,
+//   },
+//   {
+//     image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
 
-    name: " Adults Plain Cotton T-Shirt - 2 Pack",
+//     name: " Adults Plain Cotton T-Shirt - 2 Pack",
 
-    rating: {
-      stars: 4.5,
-      count: 56,
-    },
+//     rating: {
+//       stars: 4.5,
+//       count: 56,
+//     },
 
-    priceCents: 799,
-  },
-];
+//     priceCents: 799,
+//   },
+//   {
+//     image: "images/products/black-2-slot-toaster.jpg",
+
+//     name: "2 Slot Toaster - Black",
+
+//     rating: {
+//       stars: 5,
+//       count: 2197,
+//     },
+
+//     priceCents: 1899,
+//   },
+//   {
+//     image: "images/products/black-2-slot-toaster.jpg",
+
+//     name: "2 Slot Toaster - Black",
+
+//     rating: {
+//       stars: 5,
+//       count: 2197,
+//     },
+
+//     priceCents: 1899,
+//   },
+// ];
+
+/* Instead of copy pasting all the product details here we will use product.js file
+*/
 
 // foreach takes each object saves it to product and then run the function
 
 // to combine all the html generated together into a string
+
 let productsHTML = '';
+
 products.forEach((product)=>{
     // const html = `  using shortcut
     productsHTML += 
