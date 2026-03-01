@@ -62,18 +62,17 @@
 // ];
 
 /* Instead of copy pasting all the product details here we will use product.js file
-*/
+ */
 
 // foreach takes each object saves it to product and then run the function
 
 // to combine all the html generated together into a string
 
-let productsHTML = '';
+let productsHTML = "";
 
-products.forEach((product)=>{
-    // const html = `  using shortcut
-    productsHTML += 
-    `<div class="product-container">
+products.forEach((product) => {
+  // const html = `  using shortcut
+  productsHTML += `<div class="product-container">
           <div class="product-image-container">
             <img alt="athletic-cotton-socks-6-pairs" class="product-image"
               src=${product.image}>
@@ -92,7 +91,7 @@ products.forEach((product)=>{
           </div>
 
           <div class="product-price">
-            $${(product.priceCents /100).toFixed(2)}
+            $${(product.priceCents / 100).toFixed(2)}
           </div>
 
           <div class="product-quantity-container">
@@ -122,39 +121,36 @@ products.forEach((product)=>{
             Add to Cart
           </button>
         </div>
-`
-
+`;
 });
 
-document.querySelector('.js-products-grid')
- .innerHTML = productsHTML;
+document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
-document.querySelectorAll('.js-add-to-cart')
- .forEach((button)=>{
-    button.addEventListener('click', ()=>{
-        // to get the name of product on clicking add to cart btn we use .dataset which gives all the data attributes
-         const productId = button.dataset.productId;
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+  button.addEventListener("click", () => {
+    // to get the name of product on clicking add to cart btn we use .dataset which gives all the data attributes
+    const productId = button.dataset.productId;
 
-         let matchingItem;
-         cart.forEach((item) =>{
-            if(productId === item.productId){
-                matchingItem = item;
-            }
-         });
+    let matchingItem;
+    cart.forEach((item) => {
+      if (productId === item.productId) {
+        matchingItem = item;
+      }
+    });
 
-         if(matchingItem){
-            matchingItem.quantity += 1;
-         }else{
-            cart.push({
-            productId : productId,
-            quantity : 1
-         });
-         }
+    if (matchingItem) {
+      matchingItem.quantity += 1;
+    } else {
+      cart.push({
+        productId: productId,
+        quantity: 1,
+      });
+    }
+    let cartQuantity = 0;
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
+    });
 
-
-         
-
-         console.log(cart);
-
-    })
- })
+    document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+  });
+});
