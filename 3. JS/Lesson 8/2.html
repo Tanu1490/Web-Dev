@@ -61,13 +61,12 @@
         else if (result === 'You lose') score.losses++
         else if(result=== 'Tie')score.ties++
 
-        // localStorage.setItem('message', 'hello'); //this will save hello to message in localstorage
+        // localStorage.setItem('message', 'hello'); //this will save hello to message variable in localstorage
 
         localStorage.setItem("score",JSON.stringify(score));
 
         alert(
-          `You picked ${playerMove}. Computer picked ${CompMove}. ${result}.
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`,
+          `You picked ${playerMove}. Computer picked ${CompMove}. ${result}. \nWins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`,
         );
       }
 

@@ -38,7 +38,7 @@
         onclick="
           calculation = eval(calculation);
           console.log(calculation);
-          localStorage.setItem('calculation', JSON.stringify(calculation));
+          localStorage.setItem('calculation', calculation);
         "
       >
         =
@@ -63,7 +63,7 @@
       function updateCalculation(input) {
         calculation += input;
         console.log(calculation);
-        localStorage.setItem("calculation", JSON.stringify(calculation));
+        localStorage.setItem("calculation", calculation);
       }
     </script>
   </body>
