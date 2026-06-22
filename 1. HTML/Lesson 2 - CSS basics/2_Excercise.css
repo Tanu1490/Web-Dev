@@ -5,6 +5,11 @@
   height: 30px;
   width: 100px;
   cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn1:hover{
+  opacity: 0.8;
 }
 .btn2 {
   background-color: rgb(255, 216, 20);
@@ -14,6 +19,11 @@
   width: 140px;
   border-radius: 15px;
   cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn2:hover{
+  background-color:rgb(233, 195, 2) ;
 }
 .btn3 {
   background-color: rgb(46, 164, 79);
@@ -25,6 +35,11 @@
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.btn3:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.334);
 }
 .btn4 {
   background-color: rgb(121, 82, 179);
@@ -36,6 +51,10 @@
   font-weight: bold;
   cursor: pointer;
   margin-right: 6px;
+  transition: background-color 0.15s;
+}
+.btn4:hover{
+  background-color:rgb(97, 58, 155) ;
 }
 .btn5 {
   background-color: white;
@@ -46,6 +65,11 @@
   border-radius: 3px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.btn5:hover{
+  background-color: rgb(108, 117, 125);
+  color:white;
 }
 .btn6 {
   background-color: rgb(10, 102, 194);
@@ -57,7 +81,13 @@
   font-weight: bold;
   margin-right: 8px;
   cursor: pointer;
+  transition: background-color 0.15s;
 }
+
+.btn6:hover{
+  background-color:rgb(7, 81, 155) ;
+}
+
 .btn7 {
   background-color: white;
   color: rgb(10, 102, 194);
@@ -68,9 +98,17 @@
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
+  transition: border-width 0.15s;
+}
+.btn7:hover{
+  border-width: 2px;
 }
 a {
   color: rgb(0, 113, 133);
+  transition: color 0.15s;
+}
+a:hover{
+  color:rgb(184, 89, 0)
 }
 .title {
   font-size: 24px;
@@ -88,6 +126,10 @@ a {
   border-radius: 15px;
   margin-right: 8px;
   cursor: pointer;
+  transition: opacity 0.15s;
+}
+.button1:active{
+  opacity: 0.5;
 }
 .button2 {
   background-color: rgb(255, 164, 28);
@@ -96,4 +138,8 @@ a {
   width: 110px;
   border-radius: 15px;
   cursor: pointer;
+  transition: opacity 0.15s;
+}
+.button2:active{
+  opacity: 0.5;
 }
