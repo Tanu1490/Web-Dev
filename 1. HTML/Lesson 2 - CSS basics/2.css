@@ -1,0 +1,32 @@
+#btn1 {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 106px;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#btn2 {
+  background-color: white;
+  color: rgb(6, 95, 212);
+  border: 1px solid;
+  height: 36px;
+  width: 62px;
+  border-radius: 2px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+#btn3 {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 70px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 8px;
+  cursor: pointer; 
+}
