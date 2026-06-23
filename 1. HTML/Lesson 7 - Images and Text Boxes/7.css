@@ -1,0 +1,9 @@
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;  /* try other options too*/
+  object-position: right;  /*helps to see right left side of image*/
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+}

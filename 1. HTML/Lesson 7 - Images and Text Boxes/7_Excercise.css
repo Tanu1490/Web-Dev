@@ -1,0 +1,87 @@
+.pic1 {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.pic2 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pic3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.t1 {
+  color: gray;
+  border: 1px solid grey;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.t2 {
+  color: gray;
+  border: none;
+  width: 300px;
+  padding: 8px;
+  padding-left: 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.188);
+  margin-bottom: 10px;
+}
+
+div {
+  color: rgb(98, 97, 97);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.t3 {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 245px;
+}
+
+.btn1 {
+  color: white;
+  background-color: rgb(41, 103, 210);
+  border: none;
+  padding: 10px 95px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.pic4 {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.t4 {
+  border: none;
+   font-size: 18px;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.btn2{
+     background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  padding:8px 16px;
+  border-radius: 30px;
+  font-size:16px;
+   font-weight: bold;
+  vertical-align: middle;
+}
