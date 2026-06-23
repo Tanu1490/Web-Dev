@@ -1,0 +1,220 @@
+/* 4a - 4e */
+.btn1 {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+.btn2 {
+  background-color: rgb(255, 216, 20);
+  color: black;
+  border: none;
+  padding: 7px 35px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn2:hover {
+  background-color: rgb(233, 195, 2);
+}
+.btn3 {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.btn3:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.334);
+}
+.btn4 {
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: background-color 0.15s;
+}
+.btn4:hover {
+  background-color: rgb(97, 58, 155);
+}
+.btn5 {
+  background-color: white;
+  color: rgb(108, 117, 125);
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+.btn5:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+.btn6 {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn6:hover {
+  background-color: rgb(7, 81, 155);
+}
+
+.btn7 {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-width 0.15s;
+}
+.btn7:hover {
+  border-width: 2px;
+}
+
+/* 4f - 4g */
+#btn1 {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 0px;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+#btn1:hover {
+  opacity: 0.4;
+}
+#btn2 {
+  background-color: white;
+  color: rgb(6, 95, 212);
+  border: 1px solid;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 2px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+#btn2:hover {
+  background-color: rgb(6, 95, 212);
+  color: white;
+}
+#btn3 {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+#btn3:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Challenge */
+
+.btnn1 {
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+a {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.btnn2 {
+  margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+.btnn3 {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: padding 1s;
+  cursor: pointer;
+}
+
+.btnn3:hover {
+  padding: 18px 36px;
+}
+
+.btnn4 {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
+  cursor: pointer;
+}
+.btnn4:active {
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: none;
+}
+
+.btnn {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition:
+    padding 0.15s,
+    margin 0.15s;
+}
+
+.btnn:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
