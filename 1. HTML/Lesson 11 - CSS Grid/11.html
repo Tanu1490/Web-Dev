@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+
+    <!-- Grid is applied on containers -->
+     
+    <div style="display: grid; grid-template-columns: 100px 100px">
+      <!-- notice here div 1 and 2 are not taking up entire line 
+        but when these div are inside grid ,it takes up entire column of grid 
+        another thing to see there's no extra gap between both div unlike in display inline block -->
+
+      <!-- text makes the second taller than first one but they're vertically aligned -->
+      <div style="background-color: lightblue">Div 1</div>
+      <div style="background-color: lightpink">
+        Div 2
+        <p>text</p>
+      </div>
+    </div>
+
+    <div style="
+      margin-top:30px ; 
+      display: grid; 
+      grid-template-columns: 100px 100px 200px">
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">
+        100px
+        <p>text</p>
+      </div>
+       <div style="background-color: lightblue">200px</div>
+       <!-- when we have more elements than the coloumns we mentioned extras are wrapped around -->
+       <div style="background-color: lightpink">another div</div>
+    </div>
+
+    <!-- fr - free space , that means take up remaining free space  -->
+    <div style="
+      margin-top:30px ; 
+      display: grid; 
+      grid-template-columns: 100px 1fr"> 
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">
+        1fr
+      </div>
+    </div>
+
+    <div style="
+      margin-top:30px ; 
+      display: grid; 
+      grid-template-columns: 100px 1fr 2fr"> 
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">
+        1fr
+      </div>
+      <div style="background-color: lightblue">
+        1fr
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top:30px ; 
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;"> 
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px; ">
+        1fr
+      </div>
+      <div style="background-color: lightblue; height: 200px;">
+        1fr
+    </div>
+     <div style="background-color: lightpink; height: 200px; ">
+        1fr
+      </div>
+       <div style="background-color: lightblue; height: 200px;">
+        1fr
+    </div>
+    <div style="background-color: lightpink; height: 200px; ">
+        1fr
+      </div>
+      
+    </div>
+  </body>
+</html>

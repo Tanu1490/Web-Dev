@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./11_Excercise.css" />
+  </head>
+  <body>
+    <!-- 11a -->
+    <div style="display: grid; grid-template-columns: 200px 75px">
+      <div style="background-color: lightblue">200px</div>
+      <div style="background-color: lightpink">75px</div>
+    </div>
+
+    <!-- 11b -->
+    <div
+      style="
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      "
+    >
+      <div style="background-color: lightblue">col1</div>
+      <div style="background-color: lightpink">col2</div>
+      <div style="background-color: lightblue">col3</div>
+    </div>
+
+    <!-- 11c -->
+    <div
+      style="
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      "
+    >
+      <div style="background-color: lightpink">col1</div>
+      <div style="background-color: lightpink">col2</div>
+      <div style="background-color: lightpink">col3</div>
+      <div style="background-color: lightpink">col4</div>
+      <div style="background-color: lightpink">col5</div>
+      <div style="background-color: lightpink">col6</div>
+      <div style="background-color: lightpink">col7</div>
+      <div style="background-color: lightpink">col8</div>
+    </div>
+
+    <!-- 11d -->
+    <div class="card-grid">
+      <div class="card">
+        <div>
+          <img
+            class="dp"
+            src="https://i.pinimg.com/736x/26/4c/de/264cdeb1afafacbf883eeebe8b4e9248.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="name">Oliver</p>
+          <div class="friends-row">
+            <img
+              class="profile-pic"
+              src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-rj"
+              alt="dp"
+            />
+            <p class="friend-sec">2 mutual friends</p>
+          </div>
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img
+            class="dp"
+            src="https://i.pinimg.com/webp87/736x/b5/9e/33/b59e33c25ab08754aab6f2d4999b7fc6.webp"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="name">Mimi</p>
+          <div class="friends-row">
+            <img
+              class="profile-pic"
+              src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-rj"
+              alt="dp"
+            />
+            <p class="friend-sec">3 mutual friends</p>
+          </div>
+
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img
+            class="dp"
+            src="https://i.pinimg.com/webp87/736x/a0/1f/26/a01f26cc578c4159871ea05e528b3662.webp"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="name">Rex</p>
+          <div class="friends-row">
+            <img
+              class="profile-pic"
+              src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-rj"
+              alt="dp"
+            />
+            <p class="friend-sec">3 mutual friends</p>
+          </div>
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

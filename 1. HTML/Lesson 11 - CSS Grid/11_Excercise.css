@@ -1,0 +1,70 @@
+p {
+    margin:0;
+    font-family: Arial;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 15px; 
+}
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.364);
+    /* width: 200px; */
+    /* display: inline-block;
+    margin-right: 15px; */
+}
+
+.dp{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* margin: 0; */
+}
+.name{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.friends-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  column-gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.friend-sec{
+    /* display: inline-block; */
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    color: grey;
+    /* vertical-align: middle; */
+}
+
+.add-btn{
+    background-color:#4c85ff  ;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.profile-pic{
+    /* display: inline-block; */
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    object-fit: cover;
+     /* vertical-align: middle; */
+}
