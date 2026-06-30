@@ -1,0 +1,98 @@
+body{
+    padding-bottom: 1000px;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.box1{
+    background-color: lightblue;
+}
+.box2{
+    background-color: lightpink;
+}
+
+
+.flex_container2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box3{
+    background-color: lightblue;
+    width: 100px;
+}
+.box4{
+    background-color: lightpink;
+    flex: 1;
+}
+
+.flex_container3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box5{
+    background-color: lightblue;
+    width: 100px;
+}
+.box6{
+    background-color: lightpink;
+    flex: 1;
+}
+
+.box7{
+    background-color: lightblue;
+    flex:2;
+}
+
+.flex_container4{
+    margin-top: 20px;
+    height: 70px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    /*change position horizontally  */
+    justify-content: center;
+}
+
+
+.box8{
+    background-color: lightblue;
+    width: 100px;
+}
+.box9{
+    background-color: lightpink;
+     width: 100px;
+}
+
+.box10{
+    background-color: lightblue;
+     width: 100px;
+}
+
+.flex_container5{
+    margin-top: 20px;
+    height: 70px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex_container6{
+    margin-top: 20px;
+    height: 70px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    /* change position vertically */
+    justify-content: space-between;
+    align-items: center;
+}
