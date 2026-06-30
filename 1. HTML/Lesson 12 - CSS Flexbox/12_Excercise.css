@@ -1,6 +1,4 @@
-body{
-    height: 1000px;
-}
+/*------- 12a ------------*/
 .flex1{
     display: flex;
     flex-direction: row;
@@ -15,6 +13,7 @@ body{
     width: 75px;
 }
 
+/* ----------12b---------- */
 .flex2{
     margin-top: 20px;
     display: flex;
@@ -34,6 +33,8 @@ body{
     width: 75px;
 }
 
+/* --------------12c------------- */
+
 .flex3{
     margin-top: 20px ;
     display: flex;
@@ -45,9 +46,10 @@ body{
     background-color: lightpink;
 }
 
+/* ---------------12d------------- */
 .flex4{
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(150, 150, 150);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,16 +57,12 @@ body{
     height: 50px;
 }
 
-.notification{
+/* -------------12e------------------ */
+.container{
     margin-top: 20px ;
-    border: 1px solid rgba(128, 128, 128, 0.403);
-    border-radius: 5px;
-    padding: 5px 12px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 6px;
     width: 300px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -73,25 +71,20 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 6px 12px;
     height: 35px;
 }
 
-.btn1{
-    background-color: #4772ff;
+.notification{
+    background-color: rgb(49, 109, 245);
     color: white;
-    border: none;
     border-radius: 12px;
-    font-size: 16px ;
+    font-size: 14px ;
     font-weight: bold;
     padding: 3px 10px ;
 }
 
-.info1{
-    font-size: 16px;
-    font-weight: 500;
-}
-
-
+/* ------------12g--------------------- */
 .flex5{
     margin-top: 20px;
     width: 320px;
@@ -99,7 +92,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: c;
     padding: 13px 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -118,8 +110,8 @@ body{
     
 }
 img{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 25px;
     margin-right: 10px;
     object-fit: cover;
@@ -133,64 +125,66 @@ img{
 }
 
 .para{
-    margin: 0;
-    margin-bottom: 3px;
-    
-    
+    margin: 0;    
 }
 .para3{
     font-size: 13px;
     font-weight: bold;
+     margin-bottom: 3px;
 }
 .para4{
     color: gray;
     font-size: 13px;
+     margin-bottom: 5px;
 }
 
 .para5{
     color: grey;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .btn2{
-    background-color:  rgb(66, 151, 255);
+    background-color:  rgb(29, 155, 240);
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px ;
     font-weight: bold;
-    padding: 8px  12px;
+    padding: 10px  15px;
+    cursor: pointer;
 }
 
+/* -------------12f------------- */
 .search-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(135, 95, 204);
+    background-color: rgb(120, 82, 178);
+    padding: 0 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.home{
+.home-link{
     color: white;
-    font-weight: bold;
-    padding: 0 15px;
+    font-weight: bold; 
 }
 
 .search-bar{
-    width: 450px;
-    height: 26px;
+    width: 500px;
+    height: 30px;
     border: none;
-    border-radius: 16px;
-    padding-left: 18px;
+    margin: 12px 0;
+    border-radius: 15px;
+    padding-left: 20px;
    
 }
 
 .download-btn{
-    height: 30px;
-    background-color:rgb(135, 95, 204) ;
+    background-color:rgb(120, 82, 178);
     color: white;
     border: 1px solid white;
     border-radius: 2px;
-    margin-right: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
 }
