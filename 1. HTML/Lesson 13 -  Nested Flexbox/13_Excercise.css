@@ -1,0 +1,205 @@
+.container1 {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.box1 {
+  background-color: lightpink;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  background-color: lightblue;
+  width: 200px;
+}
+
+.item1 {
+  background-color: black;
+  color: white;
+}
+
+.container2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.box3 {
+  background-color: lightpink;
+  width: 100px;
+}
+
+.box4 {
+  background-color: lightblue;
+  width: 200px;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row2 {
+  background-color: black;
+  color: white;
+}
+
+.container3 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.364);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px;
+  width: 400px;
+}
+
+.inbox-label {
+  color: rgb(114, 114, 114);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sender-picture-container {
+  margin-right: 10px;
+}
+
+.sender-picture {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.email-content {
+  flex: 1;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.sender-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.send-time {
+  font-size: 13px;
+  color: rgb(114, 114, 114);
+}
+
+.subject {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message {
+  font-size: 16px;
+  color: rgb(133, 132, 132);
+}
+
+.container4 {
+   margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 420px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.tweet-coloumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.tweet-author-handle {
+  margin-left: 8px;
+  color: rgb(103, 103, 103);
+  font-size: 15px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-preview {
+  border: 1px solid rgba(128, 128, 128, 0.389);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 13px;
+  flex: 1;
+}
+
+.thumbnail-column {
+  background-color: rgba(128, 128, 128, 0.389);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px 0 0 10px;
+}
+
+.video-info-column {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tweet-content {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.tweet-author {
+  font-weight: bold;
+}
+
+.video-preview {
+  align-items: center;
+  overflow: hidden;
+}
+.video-website {
+  color: rgb(103, 103, 103);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.video-title {
+  line-height: 22px;
+}
