@@ -1,0 +1,70 @@
+body{
+     height: 3000px;
+     margin-top: 60px;
+     padding-left: 80px;
+}
+
+
+.header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top:0px;            /* specifies how far way from the top of window*/
+    left: 0px;
+    right: 0px;
+    height: 50px;
+
+    z-index: 1;   /*this will make header position above absolute div*/
+}
+
+.side-bar{
+    background-color: green;
+    color: white;
+    position: fixed;
+    top:50px;
+    left:0;
+    bottom: 0;
+    width: 72px;
+}
+
+.div1{
+    background-color: lightblue ; 
+    width: 200px; 
+    height: 200px;
+    position:static;
+  
+} 
+
+.div2{
+    background-color: lightpink ;
+    width: 200px;
+    height: 200px;
+    position: relative;    
+}
+   
+/* 
+    position = fixed -> it is placed in the browser window
+    which doesn't move when scroll up/down
+
+    absolute -> placed on the page
+*/
+.absolute-div{
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 50px;     
+    right: 10px;
+}
+
+/* when absolute div is inside position fixed - it changes it's position relative to the fixed element
+
+when it is placed inside div 2 (position relative) - it changes it's position relative to that*/
+
+
+.time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom:10px;     
+    right: 10px;
+}
