@@ -9,33 +9,6 @@
   row-gap: 40px;
 }
 
-/* For responsive design - here CSS will only activate when screen size is 600px or less */
-@media (max-width: 750px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 751) and (min-width: 999px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media (min-width: 1000px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .video-title{
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .video-author,
-  .video-stats {
-    font-size: 14px;
-  }
-}
-
 .video-title {
   margin-top: 6px;
   font-size: 14px;
@@ -47,6 +20,7 @@
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
+
 }
 
 .profile-pic {
@@ -81,6 +55,7 @@
   font-weight: 500;
   padding: 4px;
   border-radius: 2px;
+  font-family: Roboto, Arial;
 }
 
 .channel-pic {
@@ -132,6 +107,7 @@
 .channel-info {
   display: flex;
   flex-direction: column;
+  font-family: Roboto, Arial;
 }
 
 .channel-name {

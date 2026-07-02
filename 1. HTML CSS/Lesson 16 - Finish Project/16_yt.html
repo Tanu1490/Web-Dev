@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>YouTube</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,7 +17,9 @@
 </head>
 
 <body>
-  <div class="header">
+
+  <!-- Semantic elements (header ,main, section , nav etc.) = same as div but have different meaning to screen readers-->
+  <header class="header">
     <div class="left-section">
       <img class="menu-icon" src="./Icons/hamburger-menu.svg" alt="menu-icon">
       <img class="youtube-logo" src="./Icons/youtube-logo.svg" alt="youtube-logo">
@@ -53,9 +55,9 @@
         src="https://yt3.ggpht.com/yti/ANjgQV_eFjiCDkKiBg-Hdd4YbDRorgIVTc9cAwqIChZcAE9ypEMz=s88-c-k-c0x00ffffff-no-rj"
         alt="profile-picture" />
     </div>
-  </div>
+  </header>
 
-  <div class="side-bar">
+  <nav class="side-bar">
     <div class="sidebar-link">
       <img src="./Icons/home.svg" alt="home icon">
       <div>Home</div>
@@ -80,186 +82,544 @@
       <img src="./Icons/library.svg" alt="library icon">
       <div>Library</div>
     </div>
-  </div>
+  </nav>
 
-  <div class="video-grid">
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://youtu.be/IxSi5CKfQVI?si=Uz-vbKw0KYuQga5J">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/IxSi5CKfQVI/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLBfyEbZA5M3Fogg07UbBRfkx9Hn3Q"
-            alt="YouTube video thumbnail" />
-        </a>
-        <div class="playtime">3:08:48</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/@moonjiroo">
-            <img class="profile-pic"
-              src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" />
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/IxSi5CKfQVI?si=Uz-vbKw0KYuQga5J">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/IxSi5CKfQVI/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLBfyEbZA5M3Fogg07UbBRfkx9Hn3Q"
+              alt="YouTube video thumbnail" />
           </a>
+          <div class="playtime">3:08:48</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            <a href="https://youtu.be/IxSi5CKfQVI?si=Uz-vbKw0KYuQga5J">animedoro: real time study with me till dawn
-              (40/20) no music</a>
-          </p>
-          <p class="video-author">
-            <a href="https://www.youtube.com/@moonjiroo">Moonjiro</a>
-          </p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
-        </div>
-      </div>
-    </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@moonjiroo" target="_blank" rel="noopener">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-rj"
+                  alt=" profile picture">
+              </a>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://youtu.be/9kzE8isXlQY?si=saiF4D4LZ3dTNer9">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/9kzE8isXlQY/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLBWQq29VT-pVVZdJsG0HVfzvPKLRw"
-            alt="YouTube video thumbnail" />
-        </a>
-        <div class="playtime">3:25:03</div>
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/mEeQqiIAMi8R5csCPfpoojaEblIh7CT_bQmfBjglCBybmlzcGCM9hR37pcfnd_dAqC4wQ4RDfA=s68-c-k-c0x00ffffff-no-r"
+                    alt="Moonjiro profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Moonjiro</div>
+                  <div class="subscribers-count">24.7K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/IxSi5CKfQVI?si=Uz-vbKw0KYuQga5J">
+                animedoro: real time study with me till dawn (40/20) no music
+              </a>
+            </p>
+
+            <p class="video-author">
+              <a href="https://www.youtube.com/@moonjiroo">Moonjiro</a>
+            </p>
+
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/channel/UCiC2wfbkgr8DU5uOQFz9OrQ">
-            <img class="profile-pic"
-              src="https://yt3.ggpht.com/xHar-3rbJCrOhAqI1kv4EqMxhDhLILHpn84yeUnVQSy76t2NClORvSaiC1ClK6KWYRJzaOgfIg=s88-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" />
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/9kzE8isXlQY?si=saiF4D4LZ3dTNer9">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/9kzE8isXlQY/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLBWQq29VT-pVVZdJsG0HVfzvPKLRw"
+              alt="YouTube video thumbnail" />
           </a>
-
+          <div class="playtime">3:25:03</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            <a href="https://youtu.be/9kzE8isXlQY?si=gqzHR70Zdr8sESLm">
-              Less talk.... more action. / Lo-fi for study, work ( with Rain
-              sounds) 3 hours, 25 minutes
-            </a>
-          </p>
-          <p class="video-author"><a href="https://www.youtube.com/channel/UCiC2wfbkgr8DU5uOQFz9OrQ">chill chill
-              journal</a></p>
-          <p class="video-stats">11M views &#183; 6 months ago</p>
-        </div>
-      </div>
-    </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/channel/UCiC2wfbkgr8DU5uOQFz9OrQ" target="_blank" rel="noopener">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/xHar-3rbJCrOhAqI1kv4EqMxhDhLILHpn84yeUnVQSy76t2NClORvSaiC1ClK6KWYRJzaOgfIg=s88-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://www.youtube.com/watch?v=i5T6Fnbq34c">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/i5T6Fnbq34c/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgWyg5MA8=&rs=AOn4CLAJaOjMOI18At4qklSrTs0lngkbjw"
-            alt="YouTube video thumbnail" />
-        </a>
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/xHar-3rbJCrOhAqI1kv4EqMxhDhLILHpn84yeUnVQSy76t2NClORvSaiC1ClK6KWYRJzaOgfIg=s88-c-k-c0x00ffffff-no-rj"
+                    alt="profile-preview">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name">chill chill journal</div>
+                  <div class="subscribers-count">278K subscribers</div>
+                </div>
+              </div>
+            </div>
 
-        <div class="playtime">1:04</div>
-      </div>
 
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/@_infires8543">
-            <img class="profile-pic"
-              src="https://yt3.ggpht.com/ytc/AIdro_kz7LB78QXDPfCsfGGnoLYOMeioEgUEUPKtVvnblAEbgG4=s68-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" />
-          </a>
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            <a href="https://www.youtube.com/watch?v=i5T6Fnbq34c">Aesthetic anime cooking ramen with sound effects</a>
-          </p>
-          <p class="video-author"><a href="https://www.youtube.com/@_infires8543">Ellfie C</a></p>
-          <p class="video-stats">16M views &#183; 5 years ago</p>
+
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/9kzE8isXlQY?si=gqzHR70Zdr8sESLm">
+                Less talk.... more action. / Lo-fi for study, work ( with Rain
+                sounds) 3 hours, 25 minutes
+              </a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/channel/UCiC2wfbkgr8DU5uOQFz9OrQ">chill chill
+                journal</a></p>
+            <p class="video-stats">11M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://www.youtube.com/watch?v=zBEotIMuWuc">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/zBEotIMuWuc/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCgpM4RsGsxbQIWWrCWOq9y_FfLVw"
-            alt="YouTube video thumbnail" />
-        </a>
-
-        <div class="playtime">3:04</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/@spiffyfab7101"><img class="profile-pic"
-              src="https://yt3.ggpht.com/Ktjj8FfkX8PRGzMca2TfEV6VPOQquQp3gGoByEb_cRk-RZv5Rukqfxuj_AA64tTGbGYKvJ-w=s68-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" /></a>
-
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            <a href="https://www.youtube.com/watch?v=zBEotIMuWuc">aesthetic anime village lifestyle | Relaxing |
-              @spiffyfab7101 🍃🍃</a>
-          </p>
-          <p class="video-author"><a href="https://www.youtube.com/@spiffyfab7101">Spiffy Fab</a></p>
-          <p class="video-stats">676K views &#183; 4 years ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://www.youtube.com/watch?v=qcHlMSAYhVw">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/qcHlMSAYhVw/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB43UWjNCsrDKocKW-JqfiCILPoIw"
-            alt="YouTube video thumbnail" />
-        </a>
-
-        <div class="playtime">8:39</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/@hithere2593">
-            <img class="profile-pic"
-              src="https://yt3.ggpht.com/yDMiPgQyY8yKa5-k2VTcyMfYPh6kEhu4Q2ZMRHAsE0TSxZEtMvbDcJT_1QrDy43TAxXnBbEt23U=s68-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" />
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=i5T6Fnbq34c">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/i5T6Fnbq34c/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgWyg5MA8=&rs=AOn4CLAJaOjMOI18At4qklSrTs0lngkbjw"
+              alt="YouTube video thumbnail" />
           </a>
 
+          <div class="playtime">1:04</div>
         </div>
-        <div class="video-info">
-          <p class="video-title"><a href="https://www.youtube.com/watch?v=qcHlMSAYhVw">Anime Food & Cooking
-              compilation</a></p>
-          <p class="video-author"><a href="https://www.youtube.com/@hithere2593">Hi there</a></p>
-          <p class="video-stats">269K views &#183; 8 months ago</p>
+
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@_infires8543" target="_blank" rel="noopener">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/ytc/AIdro_kz7LB78QXDPfCsfGGnoLYOMeioEgUEUPKtVvnblAEbgG4=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/ytc/AIdro_kz7LB78QXDPfCsfGGnoLYOMeioEgUEUPKtVvnblAEbgG4=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile-preview">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name">Ellfie C</div>
+                  <div class="subscribers-count">45K subscribers</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=i5T6Fnbq34c">Aesthetic anime cooking ramen with sound effects</a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@_infires8543">Ellfie C</a></p>
+            <p class="video-stats">16M views &#183; 5 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <a href="https://www.youtube.com/watch?v=z9Ug-3qhrwY">
-          <img class="thumbnail"
-            src="https://i.ytimg.com/vi/z9Ug-3qhrwY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCKBOI_YuepM49pTXk-4AopQGG_IQ"
-            alt="YouTube video thumbnail" />
-        </a>
-
-        <div class="playtime">30:24</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pic">
-          <a href="https://www.youtube.com/@hbomax">
-            <img class="profile-pic"
-              src="https://yt3.ggpht.com/kYn7K474j78lLU-DZm3IzFMhJIgiEEr4XS-F1d4ODdC08k5PAf2dc-ItGWvDp9YNFfIiIkkvGA=s68-c-k-c0x00ffffff-no-rj"
-              alt="profile-picture" />
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=zBEotIMuWuc">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/zBEotIMuWuc/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCgpM4RsGsxbQIWWrCWOq9y_FfLVw"
+              alt="YouTube video thumbnail" />
           </a>
 
+          <div class="playtime">3:04</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            <a href="https://www.youtube.com/watch?v=z9Ug-3qhrwY">Studio Ghibli Nature Loop | Studio Ghibli | HBO
-              Max</a>
-          </p>
-          <p class="video-author"><a href="https://www.youtube.com/@hbomax">HBO Max</a></p>
-          <p class="video-stats">4.9M views &#183; 5 years ago</p>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@spiffyfab7101" target="_blank" rel="noopener">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/Ktjj8FfkX8PRGzMca2TfEV6VPOQquQp3gGoByEb_cRk-RZv5Rukqfxuj_AA64tTGbGYKvJ-w=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" /></a>
+
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/Ktjj8FfkX8PRGzMca2TfEV6VPOQquQp3gGoByEb_cRk-RZv5Rukqfxuj_AA64tTGbGYKvJ-w=s68-c-k-c0x00ffffff-no-rj"
+                    alt=" profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Spiffy Fab</div>
+                  <div class="subscribers-count">5.3K subscribers</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=zBEotIMuWuc">aesthetic anime village lifestyle | Relaxing |
+                @spiffyfab7101 🍃🍃</a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@spiffyfab7101">Spiffy Fab</a></p>
+            <p class="video-stats">676K views &#183; 4 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=qcHlMSAYhVw">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/qcHlMSAYhVw/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB43UWjNCsrDKocKW-JqfiCILPoIw"
+              alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime">8:39</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@hithere2593" target="_blank" rel="noopener">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/yDMiPgQyY8yKa5-k2VTcyMfYPh6kEhu4Q2ZMRHAsE0TSxZEtMvbDcJT_1QrDy43TAxXnBbEt23U=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/yDMiPgQyY8yKa5-k2VTcyMfYPh6kEhu4Q2ZMRHAsE0TSxZEtMvbDcJT_1QrDy43TAxXnBbEt23U=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Hi there</div>
+                  <div class="subscribers-count">44K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title"><a href="https://www.youtube.com/watch?v=qcHlMSAYhVw">Anime Food & Cooking
+                compilation</a></p>
+            <p class="video-author"><a href="https://www.youtube.com/@hithere2593">Hi there</a></p>
+            <p class="video-stats">269K views &#183; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=z9Ug-3qhrwY">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/z9Ug-3qhrwY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCKBOI_YuepM49pTXk-4AopQGG_IQ"
+              alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime">30:24</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@hbomax">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/kYn7K474j78lLU-DZm3IzFMhJIgiEEr4XS-F1d4ODdC08k5PAf2dc-ItGWvDp9YNFfIiIkkvGA=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/kYn7K474j78lLU-DZm3IzFMhJIgiEEr4XS-F1d4ODdC08k5PAf2dc-ItGWvDp9YNFfIiIkkvGA=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">HBO Max</div>
+                  <div class="subscribers-count">3.09M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=z9Ug-3qhrwY">Studio Ghibli Nature Loop | Studio Ghibli | HBO
+                Max</a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@hbomax">HBO Max</a></p>
+            <p class="video-stats">4.9M views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/Ji7NxxG63kA?si=IOIF-XCCGg_efpjl">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/Ji7NxxG63kA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAqZt0lCYDgLZuL4ETTdSU_wXkvoQ"
+              alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime">0:50</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@lofieditor">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/UKSh1vjwWquaHxVJjMevna9FNWm1WnmGS6_41zUItZzp6XMdnI5plhr1TCwEK5gEm9PepZv8swo=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/UKSh1vjwWquaHxVJjMevna9FNWm1WnmGS6_41zUItZzp6XMdnI5plhr1TCwEK5gEm9PepZv8swo=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">lofieditor</div>
+                  <div class="subscribers-count">52k subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/Ji7NxxG63kA?si=IOIF-XCCGg_efpjl">Zenitsu - Royalty | 100 Sub edit [Edit/AMV] +
+                Project File</a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@lofieditor">lofieditor</a></p>
+            <p class="video-stats">6.6M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/7fmW9faGDDI?si=Q4OnghlMufUMcve_">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/7fmW9faGDDI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCj9R6ejjSVrn6qKCCJsWpf_RtEA"
+              alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime">0:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@Jemartob.">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/KkrxZK473r0SkxUJOBK5vTUe7jgd2VXb2H3IJQv7G8GHjtTOcmSwfZWk4BAaTEIWUx94XpWuFYo=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/KkrxZK473r0SkxUJOBK5vTUe7jgd2VXb2H3IJQv7G8GHjtTOcmSwfZWk4BAaTEIWUx94XpWuFYo=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Jemartob</div>
+                  <div class="subscribers-count">149K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/7fmW9faGDDI?si=Q4OnghlMufUMcve_">
+                [4K] Kung Fu Panda「Edit」(SDP Interlude)
+              </a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@Jemartob.">Jemartob</a></p>
+            <p class="video-stats">5.3 views &#183; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/MR-nH4rgLaw?si=w30-c_b61sTtUKgd">
+            <img class="thumbnail"
+              src="https://i.ytimg.com/vi/MR-nH4rgLaw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAC1XL3076mAhfrqukVkX44HL3Szg"
+              alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime">3:10</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@_Dragonlive_">
+                <img class="profile-pic"
+                  src="https://yt3.ggpht.com/uL235vp0dpGhbCaMc-ufKRL-sT0SX4rVTeRLy-lG3JYROGlgVG-VZKhruz9NHKxUnyDpdeojJks=s68-c-k-c0x00ffffff-no-rj"
+                  alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic"
+                    src="https://yt3.ggpht.com/uL235vp0dpGhbCaMc-ufKRL-sT0SX4rVTeRLy-lG3JYROGlgVG-VZKhruz9NHKxUnyDpdeojJks=s68-c-k-c0x00ffffff-no-rj"
+                    alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Dragonlive</div>
+                  <div class="subscribers-count">22.8K subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/MR-nH4rgLaw?si=y9zGbC8Qtm94Saoe">[Httyd] - Eternity</a>
+            </p>
+            <p class="video-author"><a href="https://www.youtube.com/@_Dragonlive_">Dragonlive</a></p>
+            <p class="video-stats">130K views &#183; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/uJdD8eGQ1mg?si=gF0O1xWUvcnmREs0" target="_blank" rel="noopener">
+            <img class="thumbnail" src="https://i.ytimg.com/vi/uJdD8eGQ1mg/hqdefault.jpg"
+              alt="Frozen 3 trailer thumbnail">
+          </a>
+
+          <div class="playtime">1:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="https://www.youtube.com/@TeaserUniverse" target="_blank" rel="noopener">
+                <img class="profile-pic" src="https://yt3.googleusercontent.com/" alt="profile picture">
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic" src="https://yt3.googleusercontent.com/"
+                    alt="Teaser Universe profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name">Teaser Universe</div>
+                  <div class="subscribers-count">210k subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://youtu.be/uJdD8eGQ1mg?si=gF0O1xWUvcnmREs0" target="_blank" rel="noopener">
+                FAN TRAILER: Frozen 3 – “Kingdom Under Ice” (Concept Version)
+              </a>
+            </p>
+
+            <p class="video-author">
+              <a href="https://www.youtube.com/@TeaserUniverse" target="_blank" rel="noopener">
+                Teaser Universe
+              </a>
+            </p>
+
+            <p class="video-stats">
+              1.2M views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="">
+            <img class="thumbnail" src="" alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime"></div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="">
+                <img class="profile-pic" src="" alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic" src="" alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name"></div>
+                  <div class="subscribers-count"> subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href=""></a>
+            </p>
+            <p class="video-author"><a href=""></a></p>
+            <p class="video-stats"> views &#183; years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="">
+            <img class="thumbnail" src="" alt="YouTube video thumbnail" />
+          </a>
+
+          <div class="playtime"></div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <div class="profile-pic-container">
+              <a href="">
+                <img class="profile-pic" src="" alt="profile-picture" />
+              </a>
+
+              <div class="channel-preview">
+                <div class="channel-img-container">
+                  <img class="channel-profile-pic" src="" alt="profile preview">
+                </div>
+
+                <div class="channel-info">
+                  <div class="channel-name"></div>
+                  <div class="subscribers-count"> subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href=""></a>
+            </p>
+            <p class="video-author"><a href=""></a></p>
+            <p class="video-stats"> views &#183; years ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
