@@ -7,12 +7,13 @@
   border-radius: 2px;
   font-size: 13px;
   cursor: pointer;
-  transition: opacity 0.15s;     /*for smooth transition*/
+  transition: opacity 0.15s; /*for smooth transition*/
 }
 
-#btn1:hover{
+#btn1:hover {
   opacity: 0.4;
 }
+
 #btn2 {
   background-color: white;
   color: rgb(6, 95, 212);
@@ -22,15 +23,17 @@
   border-radius: 2px;
   margin-left: 8px;
   cursor: pointer;
-  transition: background-color 0.15s,
-  color 0.15s;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
 }
 
 /* Hover - Pseudo-Class, which adds extra styles in certain situations */
-#btn2:hover{
-  background-color:rgb(6, 95, 212);
+#btn2:hover {
+  background-color: rgb(6, 95, 212);
   color: white;
 }
+
 #btn3 {
   background-color: rgb(29, 155, 240);
   color: white;
@@ -41,10 +44,10 @@
   font-weight: bold;
   font-size: 15px;
   margin-left: 8px;
-  cursor: pointer; 
-  transition: box-shadow 0.15s,
- 
+  cursor: pointer;
+  transition: box-shadow 0.15s;
 }
-#btn3:hover{
-   box-shadow: 0px 5px 10px rgba(0,0,0 ,0.15);
+
+#btn3:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
