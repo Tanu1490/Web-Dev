@@ -1,5 +1,6 @@
 p{
-    font-family: Roboto , Arial;  /* Arial is backup font incase google font won't laod */
+    /* Arial is backup font incase google font won't laod */
+    font-family: Roboto , Arial;  
     margin: 0;
 }
 
