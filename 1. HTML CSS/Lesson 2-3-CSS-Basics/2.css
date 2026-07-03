@@ -29,6 +29,7 @@
 }
 
 /* Hover - Pseudo-Class, which adds extra styles in certain situations */
+
 #btn2:hover {
   background-color: rgb(6, 95, 212);
   color: white;
