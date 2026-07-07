@@ -15,7 +15,7 @@
 
     <script>
       function playGame(playerMove) {
-        const CompMove = pickCompMove();
+        const CompMove = pickCompMove();  //this compMove is different from compMove inside functions
 
         let result = "";
         if (playerMove === "Rock") {
@@ -23,11 +23,13 @@
           else if (CompMove === "Paper") result = "You lose.";
           else result = "You win.";
         }
+
          else if (playerMove === "Paper") {
           if (CompMove === "Rock") result = "You win.";
           else if (CompMove === "Paper") result = "Tie.";
           else result = "You lose.";
         }
+        
          else if (playerMove === "Scissors") {
           if (CompMove === "Rock") result = "You lose.";
           else if (CompMove === "Paper") result = "You win.";
