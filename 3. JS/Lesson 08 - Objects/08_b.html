@@ -18,15 +18,17 @@
         score.losses = 0;
         score.ties = 0;
 
+        //  when reset is done ,score removed from localStorage
         localStorage.removeItem('score');
     ">Reset Score</button>
 
     <script>
+      // when reset is done ,no score is there which gives error to solve this use deafult operator here
       let score = JSON.parse(localStorage.getItem('score')) || {
           wins:0,
           losses:0,
           ties:0
-        };  // || default op i.e if 1st part is false save 2nd part to score
+        };  
 
       // if(score === null){    //shortcut !score means if score is null then !score will be !falsy = true 
       //   score = {
@@ -35,6 +37,12 @@
       //     ties:0
       //   }
       // }
+
+      /*
+      localStorage.getItem('message') - string
+      we can directly use value from object
+      console.log(JSON.parse(localStorage.getItem('score')));  
+      */
 
 
       function playGame(playerMove) {
@@ -61,9 +69,10 @@
         else if (result === 'You lose') score.losses++
         else if(result=== 'Tie')score.ties++
 
-        // localStorage.setItem('message', 'hello'); //this will save hello to message variable in localstorage
+        //this will save hello to message variable in localstorage
+        // localStorage.setItem('message', 'hello'); 
 
-        localStorage.setItem("score",JSON.stringify(score));
+        localStorage.setItem('score',JSON.stringify(score));
 
         alert(
           `You picked ${playerMove}. Computer picked ${CompMove}. ${result}. \nWins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`,

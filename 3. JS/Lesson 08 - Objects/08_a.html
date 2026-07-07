@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <!-- What is an object? -->
+    <!-- 
+        It lets us GROUP & USE multiple values together.
+        we can store any type of value inside an object. 
+        
+    -->
+
+    <script>
+    /*   const product = {
+        name: 'socks',   //property - name , socks is value associated to that property
+        price:'1089'
+       } 
+
+       console.log(product);
+       console.log(product.name);
+       console.log(product.price);
+
+       product.name = 'shirt';
+       console.log(product);
+
+    //-------Add property------------------
+       product.material = 'cotton';
+       console.log(product);
+
+    //-------Delete property----------------
+       delete product.material;
+       console.log(product);
+
+       console.log( typeof product);
+    */
+
+
+    /*
+    const product2 = {
+        name:'shirt',
+        'delivery-time': '1-day',
+        rating:{
+            stars: 4.5,
+            count: 87
+        },
+
+        fun: function fun1(){
+            console.log('function inside object');
+        }
+    };
+
+    console.log(product2);
+    console.log(product2.name);
+
+    // ---Bracket Notations let us use properties that dont't work with dot notation------ 
+    console.log(product2['name']);
+    console.log(product2['delivery-time']);
+    console.log(product2['delivery' + 'time']);
+    
+    console.log(product2['var1']);
+    console.log(product2.rating.stars);
+    product2.fun();
+
+    */
+
+    /*
+    //--------------- These are Built in Objects--------------------
+    // This shows log is a function inside console object = Method .eg- Math.random() = Method 
+    console.log(typeof console);
+    console.log(typeof console.log);
+    
+
+    //--------- 2 more  Built in Objects - > JSON, localStorage----------------
+
+    /*
+    -----------JSON Built-in Object-------------------- 
+    - helps us work with JSON
+    -Convert JS Object -> JSON
+
+    ---------------JSON (JavaScript Object Notation)---------
+     - a syntax
+     -similar to JavaScript object
+     -but has less features
+
+     We use JSON 
+     -Since JS syntax is only known to JS environment , JSON is more universal
+     -when we send data between computers 
+     -when we store data
+    */
+
+    /* 
+    ----------------JSON.stringify()------------------- 
+    -converts an object into a JSON string
+    
+    ----------------JSON.parse()----------------------- 
+    -converts a JSON string back into a JavaScript object.
+    */
+
+    /*
+    console.log(JSON.stringify(product2));  //doesn't support func. 
+
+    const p = JSON.stringify(product2);
+    console.log(JSON.parse(p));
+
+    //--------other values like string also have 
+    properties and methods
+    // how ? - JS has Auto-boxing , below string is wrapped in a speacial object and that object has the methods and properties
+
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+    
+    */
+
+    /*
+    --------------localStorage-------------------------
+    -saves value more permanently
+    
+    ---- localStorage.setItem('key','value')
+    - to save data in localStorage
+    -it only supports strings so sometimes might need to use JSON.stringify()
+    
+    */
+
+    //-----------Objects are references in js
+
+    const obj1 = {   //obj1 points to mem. address where x and y are saved
+        x:1,
+        y:2
+    };
+
+    console.log(obj1);
+
+    //------Copy by Reference -----------------
+    const obj2 = obj1;  // now obj2 also points to same mem. address
+    console.log(obj2.y);
+
+    //even with const , value inside object can be changed 
+
+    obj2.x = 67;       //nly value are changing not reference (address)
+    console.log(obj2);
+
+    const obj3 = {
+        x:67,
+        y:2
+    };
+    console.log(obj1 === obj3);  //both pointing to diff reference.
+    console.log(obj1===obj2);    // both pointing to same ref.
+
+
+    //-----------Shortcuts for Objects-------------------
+    const obj4 = {
+        msg:'Good Job',
+        price:709
+    };
+
+
+    //---------------- Destructuring--------------------------
+    // A shortcut to take values out of objects or arrays and put them into variables.
+    
+    // const msg = obj4.msg;    
+    // when property and variable in which to save the value is same 
+    const {msg,price} = obj4;
+    console.log(msg);
+    console.log(price);
+
+    const obj5 = {
+        //---Shorthand property--
+        // msg : msg
+        msg,
+
+        //------Shorthand method----
+        // fun: function fn(){
+        //     console.log('this is function');
+        // }
+
+        fun(){
+            console.log('this is function');
+        }
+    };
+
+    console.log(msg);
+    obj5.fun();
+    </script>
+</body>
+</html>
